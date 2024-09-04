@@ -2,10 +2,12 @@ import { Children, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { NestedDropdown } from './components/NestedDropdown'
 import { Dropdown } from './components/Dropdown'
 
 function App() {
   const [filtered, setFiltered] = useState('')
+  const [childselected,SetChildselected] = useState('')
   const Details = [
     { id:"1",name:"Date of Registration",Children: [
       {id: "11",name: "dummy data 1"},
